@@ -1,10 +1,14 @@
 
-# cs50 - Search Project
+# CS50 Harvard - Search Project
 
 <img src="mygoogle.PNG" alt="Demo">
 
 # Search
 Design a front-end for Google Search, Google Image Search, and Google Advanced Search.
+
+# Languages
+- [x] HTML
+- [x] CSS
 
 # Specification
 ### Pages
