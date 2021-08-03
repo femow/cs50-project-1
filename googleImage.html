@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Images</title>
+        <style>
+            html {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            input[type=text] {
+                width: 580px;
+                border-radius: 20px;
+                height: 40px;
+                border: 1px solid #dfe1e5;
+                outline: none;
+                padding-left: 50px;
+            }
+
+            input[type=text]:hover {
+                box-shadow: 0 1px 3px rgb(194, 194, 194);
+            }
+
+            button[type=submit] {
+                outline: none;
+                border: none;
+                background: none;
+                color: #4285f4;
+                position: absolute;
+                right: 20px;
+                top: 10px;
+                cursor: pointer;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 200px;
+            }
+
+            form > div {
+                position: relative;
+            }
+
+            form > div > svg {
+                position: absolute;
+                left: 22px;
+                top: 12px;
+                color: rgb(167, 167, 167);
+            }
+
+            img {
+                margin: 20px;
+            }
+
+            body > div {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            body > div > a {
+                margin: 8px;
+            }
+
+            #google_logo_span {
+                position: absolute;
+                bottom: 0px;
+                right: 2px;
+            }
+            
+            #logo_google {
+                background: url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png") no-repeat;
+                width: 272px;
+                height: 92px;
+                color: #4285f4;
+                position: relative;
+                margin: 20px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="index.html">Google</a>
+        </div>
+        <form action="https://google.com/images" name="f">
+            <div id="logo_google">
+                <span id="google_logo_span">images</span>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                <input type="text" name="q">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </body>
+</html>
